@@ -18,9 +18,7 @@ package org.apache.commons.codec.digest;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
 import java.util.Arrays;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -74,16 +72,11 @@ public class Sha2Crypt {
      * Generates a libc crypt() compatible "$5$" hash value with random salt.
      * <p>
      * See {@link Crypt#crypt(String, String)} for details.
-     * </p>
-     * <p>
-     * A salt is generated for you using {@link ThreadLocalRandom}; for more secure salts consider using
-     * {@link SecureRandom} to generate your own salts and calling {@link #sha256Crypt(byte[], String)}.
-     * </p>
-     * 
+     *
      * @param keyBytes
      *            plaintext to hash
      * @return complete hash value
-     * @throws IllegalArgumentException
+     * @throws RuntimeException
      *             when a {@link java.security.NoSuchAlgorithmException} is caught.
      */
     public static String sha256Crypt(final byte[] keyBytes) {
@@ -94,17 +87,15 @@ public class Sha2Crypt {
      * Generates a libc6 crypt() compatible "$5$" hash value.
      * <p>
      * See {@link Crypt#crypt(String, String)} for details.
-     * </p>
+     *
      * @param keyBytes
      *            plaintext to hash
      * @param salt
-     *            real salt value without prefix or "rounds=". The salt may be null, in which case a salt is generated for
-     *            you using {@link ThreadLocalRandom}; for more secure salts consider using {@link SecureRandom} to
-     *            generate your own salts.
+     *            real salt value without prefix or "rounds="
      * @return complete hash value including salt
      * @throws IllegalArgumentException
      *             if the salt does not match the allowed pattern
-     * @throws IllegalArgumentException
+     * @throws RuntimeException
      *             when a {@link java.security.NoSuchAlgorithmException} is caught.
      */
     public static String sha256Crypt(final byte[] keyBytes, String salt) {
@@ -125,7 +116,7 @@ public class Sha2Crypt {
      * @param keyBytes
      *            plaintext to hash
      * @param salt
-     *            real salt value without prefix or "rounds="; may not be null
+     *            real salt value without prefix or "rounds="
      * @param saltPrefix
      *            either $5$ or $6$
      * @param blocksize
@@ -519,16 +510,11 @@ public class Sha2Crypt {
      * Generates a libc crypt() compatible "$6$" hash value with random salt.
      * <p>
      * See {@link Crypt#crypt(String, String)} for details.
-     * </p>
-     * <p>
-     * A salt is generated for you using {@link ThreadLocalRandom}; for more secure salts consider using
-     * {@link SecureRandom} to generate your own salts and calling {@link #sha512Crypt(byte[], String)}.
-     * </p>
      *
      * @param keyBytes
      *            plaintext to hash
      * @return complete hash value
-     * @throws IllegalArgumentException
+     * @throws RuntimeException
      *             when a {@link java.security.NoSuchAlgorithmException} is caught.
      */
     public static String sha512Crypt(final byte[] keyBytes) {
@@ -539,17 +525,15 @@ public class Sha2Crypt {
      * Generates a libc6 crypt() compatible "$6$" hash value.
      * <p>
      * See {@link Crypt#crypt(String, String)} for details.
-     * </p>
+     *
      * @param keyBytes
      *            plaintext to hash
      * @param salt
-     *            real salt value without prefix or "rounds=". The salt may be null, in which case a salt is generated for
-     *            you using {@link ThreadLocalRandom}; for more secure salts consider using {@link SecureRandom} to
-     *            generate your own salts.
+     *            real salt value without prefix or "rounds="
      * @return complete hash value including salt
      * @throws IllegalArgumentException
      *             if the salt does not match the allowed pattern
-     * @throws IllegalArgumentException
+     * @throws RuntimeException
      *             when a {@link java.security.NoSuchAlgorithmException} is caught.
      */
     public static String sha512Crypt(final byte[] keyBytes, String salt) {

@@ -205,6 +205,9 @@ public class DigestUtils {
 
     /**
      * Returns an SHA-256 digest.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @return An SHA-256 digest instance.
      * @throws IllegalArgumentException
@@ -218,6 +221,9 @@ public class DigestUtils {
 
     /**
      * Returns an SHA-384 digest.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @return An SHA-384 digest instance.
      * @throws IllegalArgumentException
@@ -231,6 +237,9 @@ public class DigestUtils {
 
     /**
      * Returns an SHA-512 digest.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @return An SHA-512 digest instance.
      * @throws IllegalArgumentException
@@ -522,6 +531,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-256 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -534,6 +546,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-256 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -548,6 +563,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-256 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest; converted to bytes using {@link StringUtils#getBytesUtf8(String)}
@@ -560,6 +578,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-256 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -572,6 +593,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-256 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -586,6 +610,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-256 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -598,6 +625,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-384 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -610,6 +640,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-384 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -624,6 +657,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-384 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest; converted to bytes using {@link StringUtils#getBytesUtf8(String)}
@@ -636,6 +672,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-384 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -648,6 +687,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-384 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -662,6 +704,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-384 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -674,6 +719,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-512 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -686,6 +734,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-512 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -700,6 +751,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-512 digest and returns the value as a <code>byte[]</code>.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest; converted to bytes using {@link StringUtils#getBytesUtf8(String)}
@@ -712,6 +766,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-512 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -724,6 +781,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-512 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
@@ -738,6 +798,9 @@ public class DigestUtils {
 
     /**
      * Calculates the SHA-512 digest and returns the value as a hex string.
+     * <p>
+     * Throws a <code>RuntimeException</code> on JRE versions prior to 1.4.0.
+     * </p>
      *
      * @param data
      *            Data to digest
